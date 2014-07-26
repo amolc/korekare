@@ -1,0 +1,80 @@
+html body{ min-width: 300px; }
+
+#gdlr-main-navigation{ display: block; }
+#gdlr-responsive-navigation{ display: none; }
+
+/*--- tablet ---*/
+@media only screen and (max-width: 959px) {
+	body .container{ max-width: 768px; }	
+	body .body-wrapper.gdlr-boxed-style { max-width: 808px; }
+	
+	.flex-direction-nav .flex-prev,
+	.flex-direction-nav .flex-next { opacity: 1; }
+	
+	.gdlr-header-style-1 .gdlr-logo{ float: none; margin: 35px auto 10px; }
+	.gdlr-header-style-1 .gdlr-navigation { margin-top: 0px; float: none !important; 
+		display: block; text-align: center; line-height: 0; }
+	.gdlr-header-style-1 .gdlr-navigation > ul.sf-menu{ display: inline-block; float: none; 
+		line-height: 1.7; text-align: left; }
+	.gdlr-header-style-1 .gdlr-main-menu > li > a{ padding-bottom: 20px; }
+}
+
+/*--- mobile landscape style ---*/
+@media only screen and (max-width: 767px) {
+	body .container{ max-width: 420px; }
+	body .body-wrapper.gdlr-boxed-style { max-width: 460px; }
+	body .body-wrapper{ overflow: hidden; }
+	
+	.one-ninth, .one-eighth, .one-seventh,.one-fifth,
+	.two-fifth, .three-fifth, .four-fifth,
+	.one, .two, .three, .four, .five, .six, .seven,
+	.eight, .nine, .ten, .eleven, .twelve{ width: 100%; }	
+	
+	/*--- top bar ---*/
+	.top-navigation-container{ text-align: center; line-height: 1; }
+	.top-navigation-left{ display: none; }
+	.top-navigation-right{ float: none; }
+	.top-navigation-right-text{ float: none; padding: 6px; }
+	.top-social-wrapper{ float: none; margin-left: 0px; display: inline-block; padding-top: 4px; }
+	
+	/* .top-navigation-left { float: none; display: inline-block;  }	
+	.gdlr-top-menu.sf-menu{ position: relative; }
+	.gdlr-top-menu.sf-menu > .gdlr-mega-menu .sf-mega { left: 0px; right: 0px; }
+	.gdlr-top-menu.sf-menu > .gdlr-mega-menu .sf-mega-section { float: none; } */	
+	
+	/*--- logo ---*/
+	.gdlr-header-wrapper .gdlr-logo{ float: none; text-align: center; margin: 30px 15px; padding-right: 65px; }
+	.gdlr-logo-right-text{ float: none; text-align: center; margin: 0px 10px 30px; }
+	
+	#gdlr-main-navigation{ display: none; }
+	#gdlr-responsive-navigation { display: block; height: 0px; position: static; float: none; }
+	#gdlr-responsive-navigation .dl-trigger{ position: absolute; right: 10px; top: 5px; }
+	.dl-menuwrapper .dl-menu, .dl-menuwrapper > .dl-submenu{ margin: 0px 15px; width: 390px; }
+	
+	/*--- stunning-text ---*/
+	.gdlr-stunning-text-item{ text-align: center; }
+	.gdlr-stunning-text-item.type-normal.gdlr-button-on{ padding-right: 0px; }
+	.gdlr-stunning-text-item.type-normal .stunning-text-button{ position: static; margin-top: 0px; }
+	.gdlr-stunning-text-item.with-padding.gdlr-button-on{ padding-right: 35px; }
+	
+	html .woocommerce ul.products li.product, html .woocommerce-page ul.products li.product { width: 99% !important; }
+	
+	/*--- single page ---*/
+	.gdlr-portfolio-style1 .gdlr-portfolio-description{ float: none; margin-right: 0px; width: auto; }
+	.gdlr-portfolio-style1 .gdlr-portfolio-info{ width: auto; float: none; margin-bottom: 30px; }	
+	.gdlr-portfolio-style2 .gdlr-portfolio-thumbnail {
+    max-width: 100%; float: none; margin-right: 0px; margin-left: 0px; width: auto !important;  }
+	
+	/*--- slider ---*/
+	.gdlr-caption-wrapper .gdlr-caption .gdlr-caption-text { display: none; }
+	.gdlr-caption-wrapper .gdlr-caption .gdlr-caption-title { margin-bottom: 0px; font-size: 15px; }
+	.gdlr-caption-wrapper .gdlr-caption { max-width: 100%; padding: 13px 12px; }	 
+}
+
+/*--- mobile portrait style ---*/
+@media only screen and (max-width: 419px) {
+	body .container{ max-width: 300px; }
+	body .body-wrapper.gdlr-boxed-style { max-width: 340px; }
+	
+	.dl-menuwrapper .dl-menu, .dl-menuwrapper > .dl-submenu{ width: 270px; }
+}
