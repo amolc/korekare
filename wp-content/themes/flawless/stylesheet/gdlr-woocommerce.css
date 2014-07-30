@@ -30,16 +30,22 @@ html .woocommerce a.button, html .woocommerce button.button, html .woocommerce i
 	font-weight: bold;
 }
 html .woocommerce ul.products li.product h3, html .woocommerce-page ul.products li.product h3 {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: lighter;
 	padding-top: 5px;
 }
 html .woocommerce ul.products li.product, html .woocommerce-page ul.products li.product {
 	text-align: center;
+	float: left;
+	margin: 0px 1% 2.992em 0px;
+	padding: 1%;
+	position: relative;
+	width: 22%;
 }
 html .woocommerce ul.products li.product .price, html .woocommerce-page ul.products li.product .price {
-	font-size: 24px;
-	font-weight: 600;
+	font-size: 18px;
+	font-weight: lighter;
+	margin-bottom: 0px;
 }
 .product ins {
 	text-decoration: none;
@@ -615,6 +621,7 @@ width: 29.5%;
 }
 html .woocommerce ul.products li.product, html .woocommerce-page ul.products li.product {
 margin-top: 25px;
+background-color: whitesmoke;
 }
 html .woocommerce-info a.showcoupon{ 
 margin-left: 15px;
