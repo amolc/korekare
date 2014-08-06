@@ -93,32 +93,21 @@
 			return $array;
 		}
 	}
-
-/* custom chnages done here */	
-
-function filter_gettext($translation, $text, $domain) {
-		
-	 switch ( $translation ) {
-	 	case 'WooCommerce Status':
-	 		$translation = 'Store Status';
-			break;
-		case 'WooCommerce Recent Reviews':
-	 		$translation = 'Product Reviews';
-			break;
-		case 'Include WooCommerce\'s lightbox. Product gallery images will open in a lightbox.':
-		 	$translation = 'Include Store\'s lightbox. Product gallery images will open in a lightbox.';
-		 	break;
-		case 'WooCommerce':
-			$translation = 'Store';
-			break;
-		case 'These pages need to be set so that WooCommerce knows where to send users to checkout.':
-			$translation = 'These pages need to be set so that Store knows where to send users to checkout.';
-			break;
-	 }
-    
-    return $translation;
+	
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+ 
+function woo_remove_product_tabs( $tabs ) {
+ 
+unset( $tabs['description'] ); // Remove the description tab
+//unset( $tabs['reviews'] ); // Remove the reviews tab
+//unset( $tabs['additional_information'] ); // Remove the additional information tab
+ 
+return $tabs;
+ }
+ 
+add_filter( 'default_checkout_country', 'change_default_checkout_country' );
+function change_default_checkout_country() {
+return '65'; // country code
 }
 
-add_filter('gettext', 'filter_gettext', 1, 4);
 
-add_filter( 'woocommerce_enqueue_styles', '__return_false' );

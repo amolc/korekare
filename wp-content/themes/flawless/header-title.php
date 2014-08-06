@@ -42,7 +42,9 @@
 				<?php } ?>
 			</div>	
 		</div>	
-	<?php }else if( is_single() ){ // for custom post type
+	<?php } else if( is_single() && $post->post_type == 'post' ){
+			$page_caption ='';
+		} else if( is_single() ){ // for custom post type
 		
 		$page_title = get_the_title();
 		if( !empty($gdlr_post_option) && !empty($gdlr_post_option['page-caption']) ){
@@ -50,6 +52,7 @@
 		}else if($post->post_type == 'portfolio' && !empty($theme_option['page-caption']) ){
 			$page_caption = $theme_option['portfolio-caption'];		
 		}
+		if( $page_caption ){
 	?>
 		<div class="gdlr-page-title-wrapper" <?php echo $header_background; ?>  >
 			<div class="gdlr-page-title-container container" >
@@ -59,7 +62,8 @@
 				<?php } ?>
 			</div>	
 		</div>	
-	<?php }else if( is_404() ){ ?>
+	<?php } 
+	} else if( is_404() ){ ?>
 		<div class="gdlr-page-title-wrapper" <?php echo $header_background; ?>  >
 			<div class="gdlr-page-title-container container" >
 				<h1 class="gdlr-page-title"><?php _e('404', 'gdlr_translate'); ?></h1>

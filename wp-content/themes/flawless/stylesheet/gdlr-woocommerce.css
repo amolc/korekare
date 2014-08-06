@@ -166,7 +166,6 @@ html .woocommerce .related ul.products li.product, html .woocommerce .related ul
 .related.products h2 {
 	font-size: 24px;
 	font-weight: lighter;
-	margin-top: 50px;
 }
 html .woocommerce div.product .woocommerce-tabs ul.tabs, html .woocommerce #content div.product .woocommerce-tabs ul.tabs, html .woocommerce-page div.product .woocommerce-tabs ul.tabs, html .woocommerce-page #content div.product .woocommerce-tabs ul.tabs {
 	padding-top: 35px;
@@ -202,7 +201,7 @@ html .woocommerce ul.tabs li:after {
     display: none;
 }
 html .woocommerce div.product .woocommerce-tabs .panel, html .woocommerce #content div.product .woocommerce-tabs .panel, html .woocommerce-page div.product .woocommerce-tabs .panel, html .woocommerce-page #content div.product .woocommerce-tabs .panel {
-	margin: 0 0 70px;
+	margin: 0 0 20px;
 }
 html .woocommerce .products ul, html .woocommerce ul.products, html .woocommerce-page .products ul, html .woocommerce-page ul.products {
 	margin-bottom: 40px;
@@ -542,7 +541,7 @@ margin-bottom: 1.9em;
 }
 html .woocommerce .with-sidebar-content ul.products li.product.gdlr-1-product-per-row{ width: 99%; }
 html .woocommerce .with-sidebar-content ul.products li.product.gdlr-2-product-per-row{ width: 48%; }
-html .woocommerce .with-sidebar-content ul.products li.product.gdlr-3-product-per-row{ width: 29.5%; }
+html .woocommerce .with-sidebar-content ul.products li.product.gdlr-3-product-per-row{  }
 html .woocommerce .with-sidebar-content ul.products li.product.gdlr-4-product-per-row{ width: 22%; }
 html .woocommerce .with-sidebar-content ul.products li.product.gdlr-5-product-per-row{ width: 16.5%; }
 
@@ -674,5 +673,5 @@ float: right;
 margin-bottom: 10px;
 }
 }
-
+#printtab li{width:35%}
 
