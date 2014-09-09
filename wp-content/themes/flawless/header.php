@@ -144,5 +144,4 @@
 		?>
 	</header>
 	<?php } // page style ?>
-	<div class="content-wrapper">
-    aashish
+	<div class="content-wrapper">    
