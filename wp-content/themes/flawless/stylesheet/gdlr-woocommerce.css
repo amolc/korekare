@@ -1,4 +1,5 @@
 /*-- WooCommerce Stylesheet by GoodLayers --*/
+html .woocommerce{ margin-top: 20px;}
 html .woocommerce h2 {
 font-size: 22px;
 }
@@ -44,7 +45,7 @@ html .woocommerce ul.products li.product, html .woocommerce-page ul.products li.
 }
 html .woocommerce ul.products li.product .price, html .woocommerce-page ul.products li.product .price {
 	font-size: 18px;
-	font-weight: lighter;
+	font-weight: 600;
 	margin-bottom: 0px;
 }
 .product ins {
@@ -675,3 +676,10 @@ margin-bottom: 10px;
 }
 #printtab li{width:35%}
 
+.woocommerce-page div.product div.images{ width: 40%; }
+.woocommerce-page div.product div.summary{ width: 56%; }
+.variations select{ padding: 10px; max-width: 100%; width: auto;}
+.woocommerce-page.columns-3 ul.products li.product, .woocommerce.columns-3 ul.products li.product{
+    width: 29.75%;
+    background-color:#fff;
+}

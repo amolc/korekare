@@ -115,7 +115,7 @@
 	if( !is_admin() ){ new gdlr_include_script(); }	
 	
 add_filter( 'show_admin_bar', '__return_false',99 );
-add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
 
 /********************* Wprdpress login logo *************************/
 function my_custom_login_logo() {
@@ -126,7 +126,7 @@ function my_custom_login_logo() {
 			background-position: center center;
 			height: 76px !important;
 			background-size: 100% !important;
-		}
+		}	
     </style>';
 
 }

@@ -28,11 +28,11 @@
 			</div>
 			<div class="sub-menu-item">
 				<a class="gdlr-button" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" >
-					<?php echo __('View Cart', 'gdlr_translate'); ?>
+					<?php echo __('My Cart', 'gdlr_translate'); ?>
 				</a>
-				<a class="gdlr-button" href="<?php echo $woocommerce->cart->get_checkout_url(); ?>" >
-					<?php echo __('Check Out', 'gdlr_translate'); ?>
-				</a>
+				<!-- <a class="gdlr-button" href="<?php //echo $woocommerce->cart->get_checkout_url(); ?>" >
+					<?php //echo __('Check Out', 'gdlr_translate'); ?>
+				</a> -->
 			</div>
 		</div>
 	</div>

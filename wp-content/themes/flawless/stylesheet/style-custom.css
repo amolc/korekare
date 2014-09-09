@@ -1,8 +1,8 @@
-html.ltie9 body, body{ min-width: 1000px; } .container{ max-width: 1200px; }
+html.ltie9 body, body{ min-width: 1000px; } .container{ max-width: 1000px; }
 .body-wrapper.gdlr-boxed-style { max-width: 1080px; }
-.gdlr-logo{ max-width: 153px; }
-.gdlr-logo{ margin-top: 26px; }
-.gdlr-logo{ margin-bottom: 26px; }
+.gdlr-logo{ max-width: 466px; }
+.gdlr-logo{ margin-top: 10px; }
+.gdlr-logo{ margin-bottom: 10px; }
 .gdlr-logo-right-text{ margin-top: 47px; }
 .gdlr-navigation{ margin-top: 37px; }
 .gdlr-main-menu > li > a{ padding-bottom: 40px; }
@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6, .gdlr-title, .gdlr-title a{ color: #454545; }
 .gdlr-item-title-wrapper .gdlr-item-title{ color: #292929; border-color: #292929; }
 .gdlr-item-title-wrapper .gdlr-item-caption{ color: #9b9b9b; }
 body{ color: #7c7c7c; }
-a{ color: #97c566; }
+a{ color: #9db2b1; }
 a:hover{ color: #97c566; }
 body *{ border-color: #e5e5e5; }
 .page-not-found-block{ background-color: #d65938; }
@@ -143,15 +143,15 @@ table.style-2 tr:nth-child(even){ color: #949494; }
 .gdlr-pagination .page-numbers:hover, .gdlr-pagination .page-numbers.current{ color: #ffffff; }
 .gdlr-personnel-item .personnel-item-inner{ background-color: #f5f5f5; }
 .gdlr-personnel-item .personnel-author{ color: #3b3b3b; }
-.gdlr-personnel-item .personnel-author-image{ border-color: #99d15e; }
+.gdlr-personnel-item .personnel-author-image{ border-color: #9db2b1; }
 .gdlr-personnel-item .personnel-position{ color: #acacac; }
 .gdlr-personnel-item .personnel-content{ color: #959595; }
 .gdlr-personnel-item .personnel-social i{ color: #3b3b3b; }
 .gdlr-testimonial-item .testimonial-item-inner, .gdlr-testimonial-item .testimonial-author-image{ background-color: #f5f5f5; }
 .gdlr-testimonial-item .testimonial-content{ color: #9b9b9b; }
-.gdlr-testimonial-item .testimonial-author{ color: #99d15e; }
+.gdlr-testimonial-item .testimonial-author{ color: #9db2b1; }
 .gdlr-testimonial-item .testimonial-position{ color: #4d4d4d; }
-.gdlr-testimonial-item .testimonial-author-image{ border-color: #99d15e; }
+.gdlr-testimonial-item .testimonial-author-image{ border-color: #9db2b1; }
 .gdlr-testimonial-item.box-style .testimonial-item-inner:after{ border-top-color: #dddddd; border-left-color: #dddddd; }
 .gdlr-gallery-thumbnail .gallery-item{ background-color: #e5e5e5; }
 .gdlr-gallery-thumbnail-container .gallery-caption{ background-color: #000000; }
@@ -185,7 +185,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea{ color
 .copyright-wrapper{ background-color: #3f3f3f; }
 .copyright-wrapper{ color: #919191; }
 .footer-wrapper .copyright-wrapper{ border-color: #555555; }
-html  .woocommerce span.onsale, html  .woocommerce-page span.onsale, html .woocommerce-message,html .woocommerce div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active,html .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active {  background: #94d64f; }html .woocommerce .star-rating, html .woocommerce-page .star-rating, html .woocommerce .star-rating:before, html .woocommerce-page .star-rating:before, html .woocommerce div.product span.price, html .woocommerce div.product p.price, html .woocommerce #content div.product span.price, html .woocommerce #content div.product p.price, html .woocommerce-page div.product span.price, html .woocommerce-page div.product p.price, html .woocommerce-page #content div.product span.price, html .woocommerce-page #content div.product p.price {color: #94d64f; }
+html  .woocommerce span.onsale, html  .woocommerce-page span.onsale, html .woocommerce-message,html .woocommerce div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active,html .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active {  background: #5d8aa8; }html .woocommerce .star-rating, html .woocommerce-page .star-rating, html .woocommerce .star-rating:before, html .woocommerce-page .star-rating:before, html .woocommerce div.product span.price, html .woocommerce div.product p.price, html .woocommerce #content div.product span.price, html .woocommerce #content div.product p.price, html .woocommerce-page div.product span.price, html .woocommerce-page div.product p.price, html .woocommerce-page #content div.product span.price, html .woocommerce-page #content div.product p.price {color: #5d8aa8; }
 html .woocommerce-message  a.button, html .woocommerce-error  a.button, html .woocommerce-info  a.button, html .woocommerce-info a.showcoupon, html .woocommerce-message, html .woocommerce-error, html .woocommerce-info, html  .woocommerce span.onsale, html  .woocommerce-page span.onsale, html .woocommerce div.product .woocommerce-tabs ul.tabs li.active,html .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce nav.woocommerce-pagination ul li span.current, html .woocommerce-page nav.woocommerce-pagination ul li span.current, html .woocommercenav.woocommerce-pagination ul li a:hover, html .woocommerce-page nav.woocommerce-pagination ul li a:hover{ color: #ffffff; }
 html .woocommerce-info{ background: #389EC5; }
 html .woocommerce-error{ background: #C23030; }

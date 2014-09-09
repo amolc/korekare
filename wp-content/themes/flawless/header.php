@@ -65,7 +65,8 @@
 			<div class="gdlr-header-inner">
 				<div class="gdlr-header-container container">
 					<!-- logo -->
-					<div class="gdlr-logo">
+                                        <div  id="logoDiv">
+                                        <div class="gdlr-logo">
 						<?php echo (is_front_page())? '<h1>':''; ?>
 						<a href="<?php echo home_url(); ?>" >
 							<?php 
@@ -78,7 +79,7 @@
 						</a>
 						<?php echo (is_front_page())? '</h1>':''; ?>
 					</div>
-
+                                        </div>
 					<?php 
 						// navigation for style 1
 						if( $theme_option['header-style'] == 'style-1' ){
