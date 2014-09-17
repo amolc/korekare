@@ -36,20 +36,26 @@ global $woocommerce, $product, $post;
 								if ( taxonomy_exists( sanitize_title( $name ) ) ) {
 
 									$terms = get_terms( sanitize_title($name), array('menu_order' => 'ASC') );
+									
 
 $variationID='_transient_wc_product_children_ids_'.$post->ID;
 $allvariationID=get_option($variationID);
-/*echo '<pre>'; 
-print_r($go); die();
+/*echo '<pre>';
+print_r($allvariationID); die();
 echo '</pre>';*/
+global $wpdb;
+foreach($allvariationID as $mid)
+{
+$pls = $wpdb->get_results("select guid from wp_posts where post_parent = ".$mid);
+
+}
 
 
 
-
-
+ 
 									foreach ( $terms as $term ) {
 										if ( ! in_array( $term->slug, $options ) ) continue;
-										echo '<div class="variationdiv" id="radio_' . $term->slug . '"><input type="radio" value="' . $term->slug . '" ' . checked( $selected_value, $term->slug, false ) . ' id="'. esc_attr( sanitize_title($name) ) .'" name="attribute_'. sanitize_title($name).'"><img src="" /></div>';
+										echo '<div class="variationdiv" id="radio_' . $term->slug . '"><input type="radio" value="' . $term->slug . '" ' . checked( $selected_value, $term->slug, false ) . ' id="'. esc_attr( sanitize_title($name) ) .'" name="attribute_'. sanitize_title($name).'"><img src="'.$pls[$i]->guid.'" /></div>';
 									}
 								} else {
 									foreach ( $options as $option )
