@@ -9,9 +9,12 @@
 
 global $woocommerce, $product, $post;
 ?>
-<script type="text/javascript">var product_variations_<?php echo $post->ID; ?> = <?php echo json_encode( $available_variations ) ?>;</script>
+<script type="text/javascript">
+    var product_variations_<?php echo $post->ID; ?> = <?php echo json_encode( $available_variations ) ?>;
+</script>
 
 <?php do_action('woocommerce_before_add_to_cart_form'); ?>
+
 
 <form action="<?php echo esc_url( $product->add_to_cart_url() ); ?>" class="variations_form cart" method="post" enctype='multipart/form-data' data-product_id="<?php echo $post->ID; ?>">
 	<table class="variations" cellspacing="0">
@@ -20,7 +23,7 @@ global $woocommerce, $product, $post;
 				<tr>
 					<td class="label"><label for="<?php echo sanitize_title($name); ?>"><?php echo $woocommerce->attribute_label($name); ?></label></td>
 					<td class="value"><fieldset>
-						<strong>Choose An Option...</strong><br />
+						<!--<strong>Choose An Option...</strong><br />-->
 						<?php
 							if ( is_array( $options ) ) {
 
@@ -34,9 +37,19 @@ global $woocommerce, $product, $post;
 
 									$terms = get_terms( sanitize_title($name), array('menu_order' => 'ASC') );
 
+$variationID='_transient_wc_product_children_ids_'.$post->ID;
+$allvariationID=get_option($variationID);
+/*echo '<pre>'; 
+print_r($go); die();
+echo '</pre>';*/
+
+
+
+
+
 									foreach ( $terms as $term ) {
 										if ( ! in_array( $term->slug, $options ) ) continue;
-										echo '<input type="radio" value="' . $term->slug . '" ' . checked( $selected_value, $term->slug, false ) . ' id="'. esc_attr( sanitize_title($name) ) .'" name="attribute_'. sanitize_title($name).'">' . apply_filters( 'woocommerce_variation_option_name', $term->name ).'<br />';
+										echo '<div class="variationdiv" id="radio_' . $term->slug . '"><input type="radio" value="' . $term->slug . '" ' . checked( $selected_value, $term->slug, false ) . ' id="'. esc_attr( sanitize_title($name) ) .'" name="attribute_'. sanitize_title($name).'"><img src="" /></div>';
 									}
 								} else {
 									foreach ( $options as $option )
@@ -70,3 +83,19 @@ global $woocommerce, $product, $post;
 </form>
 
 <?php do_action('woocommerce_after_add_to_cart_form'); ?>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" >
+$(".variations :radio").hide().click(function(e)
+{
+    e.stopPropagation();
+});
+$(".variationdiv").click(function(e){
+	
+    $(this).closest(".variations").find("div").removeClass("selected");
+    $(this).addClass("selected").find(":radio").click();
+	 $(".selected").click(function(){   
+	 // var tID = $(this).attr( "id" );   
+//alert(tID);
+	 })
+});
+</script>
