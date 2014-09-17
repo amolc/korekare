@@ -152,7 +152,7 @@ img.gdlr-full-boxed-background{ min-height: 100%; min-width: 1024px;
 .top-social-wrapper .social-icon a:hover{ opacity: 0.6; filter: alpha(opacity=60); }
 
 /*--- search form ---*/
-.gdlr-header-style-1 .gdlr-nav-search-form-button{ border-width: 1px; border-style: solid; margin-left: 5px; }
+.gdlr-header-style-1 .gdlr-nav-search-form-button{ border-width: 1px; border-style: solid; margin-left: 5px; /**/ margin-right: 10px; }
 .gdlr-header-style-2 .gdlr-nav-search-form-button{ float: right; margin-top: 7px; }
 .ie7 .gdlr-header-style-2 .gdlr-nav-search-form-button{ display: none !important; }
 
@@ -196,7 +196,7 @@ img.gdlr-full-boxed-background{ min-height: 100%; min-width: 1024px;
 .gdlr-logo{ width: 50%; margin: 0px auto; }
 .gdlr-logo h1{ margin-bottom: 0px; line-height: 0; }
 
-.gdlr-navigation-wrapper.gdlr-style-1 .gdlr-navigation{ float: right; margin-left: 15px; margin-right: 15px; }
+.gdlr-navigation-wrapper.gdlr-style-1 .gdlr-navigation{ /*float: right;*/ margin-left: 15px; margin-right: 15px;}
 .gdlr-logo-right-text{ float: right; text-align: right; margin-left: 10px; margin-right: 10px; }
 .gdlr-navigation-wrapper.gdlr-style-2{ border-top-width: 1px; border-top-style: solid; 
 	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
@@ -1119,4 +1119,60 @@ only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device
 	.gdl-search-form input[type="submit"] { background-image: url('images/dark/icon-search@2x.png'); }
 	.page-not-found-search  .gdl-search-form input[type="submit"]{ background-image: url('images/light/icon-search@2x.png'); }
 }
-#logoDiv{width: 95%;}
+#logoDiv{/*width: 95%;*/ width:100%;}
+
+
+/* my css */
+/*input[type="radio"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    -ms-appearance: checkbox;     
+    -o-appearance: checkbox;      
+}
+/*
+label > input{ 
+  display:none;
+}
+label > input + img{ 
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{
+  border:2px solid #f00;
+}*/
+.variationdiv {
+    float:left;
+    width:30px;
+    height:27px;
+    line-height:20px;
+    text-align:center;
+    background: #ccc;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+.variations div.selected, .variations div:hover {
+    border: 3px solid #00cc00;
+}
+/**/
+
+.gdlr-navigation-wrapper .gdlr-navigation:before, .gdlr-navigation-wrapper .gdlr-navigation:after{
+background-color: #d0d0d0;
+content: "";
+display: inline-block;
+height: 1px;
+bottom: .1em;
+vertical-align: middle;
+width: 26%; 
+float:left}
+
+.gdlr-navigation ul{ margin:0 auto; width:50%;}
+.gdlr-main-menu > li > a {
+padding-bottom: 0 !important;
+}
+.sf-menu > li > a {
+margin-right: 0!important;padding: 10px 14px!important;
+}
+.sf-menu {
+float: none !important; 
+}
