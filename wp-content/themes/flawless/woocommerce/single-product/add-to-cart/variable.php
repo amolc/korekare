@@ -47,7 +47,7 @@ global $wpdb;
 foreach($allvariationID as $mid)
 {
 $pls = $wpdb->get_results("select guid from wp_posts where post_parent = ".$mid);
-
+$pls[0]->guid;
 }
 
 
@@ -55,7 +55,7 @@ $pls = $wpdb->get_results("select guid from wp_posts where post_parent = ".$mid)
  
 									foreach ( $terms as $term ) {
 										if ( ! in_array( $term->slug, $options ) ) continue;
-										echo '<div class="variationdiv" id="radio_' . $term->slug . '"><input type="radio" value="' . $term->slug . '" ' . checked( $selected_value, $term->slug, false ) . ' id="'. esc_attr( sanitize_title($name) ) .'" name="attribute_'. sanitize_title($name).'"><img src="'.$pls[$i]->guid.'" /></div>';
+										echo '<div class="variationdiv" id="radio_' . $term->slug . '"><input type="radio" value="' . $term->slug . '" ' . checked( $selected_value, $term->slug, false ) . ' id="'. esc_attr( sanitize_title($name) ) .'" name="attribute_'. sanitize_title($name).'"><img src="'.$pls[0]->guid.'" /></div>';
 									}
 								} else {
 									foreach ( $options as $option )
