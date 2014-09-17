@@ -36,27 +36,21 @@ global $woocommerce, $product, $post;
 								if ( taxonomy_exists( sanitize_title( $name ) ) ) {
 
 									$terms = get_terms( sanitize_title($name), array('menu_order' => 'ASC') );
-									
 
-$variationID='_transient_wc_product_children_ids_'.$post->ID;
-$allvariationID=get_option($variationID);
-/*echo '<pre>';
-print_r($allvariationID); die();
-echo '</pre>';*/
-$gh= array();
-global $wpdb;
-foreach($allvariationID as $mid)
-{
-$pls = $wpdb->get_results("select guid from wp_posts where post_parent = ".$mid);
-$gh[]=$pls[0]->guid;
-}
-
-
+								  $variationID='_transient_wc_product_children_ids_'.$post->ID;
+								  $allvariationID=get_option($variationID);
+								  $gh= array();
+								  global $wpdb;
+								  foreach($allvariationID as $mid)
+								  {
+								  $pls = $wpdb->get_results("select guid from wp_posts where post_parent = ".$mid);
+								  $gh[]=$pls[0]->guid;
+								  }
 
  									$as=0;
 									foreach ( $terms as $term ) {
 										if ( ! in_array( $term->slug, $options ) ) continue;
-										echo '<div class="variationdiv" id="radio_' . $term->slug . '"><input type="radio" value="' . $term->slug . '" ' . checked( $selected_value, $term->slug, false ) . ' id="'. esc_attr( sanitize_title($name) ) .'" name="attribute_'. sanitize_title($name).'"><img src="'.$gh[$as].'" /></div>';
+										echo '<div class="variationdiv" id="radio_' . $term->slug . '"><input type="radio" value="' . $term->slug . '" ' . checked( $selected_value, $term->slug, false ) . ' id="'. esc_attr( sanitize_title($name) ) .'" name="attribute_'. sanitize_title($name).'"><label for="'. esc_attr( sanitize_title($name) ) .'">as</label></div>';
 									$as++;
 									}
 								} else {
@@ -91,19 +85,8 @@ $gh[]=$pls[0]->guid;
 </form>
 
 <?php do_action('woocommerce_after_add_to_cart_form'); ?>
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
 <script type="text/javascript" >
-$(".variations :radio").hide().click(function(e)
-{
-    e.stopPropagation();
-});
-$(".variationdiv").click(function(e){
-	
-    $(this).closest(".variations").find("div").removeClass("selected");
-    $(this).addClass("selected").find(":radio").click();
-	 $(".selected").click(function(){   
-	 // var tID = $(this).attr( "id" );   
-//alert(tID);
-	 })
-});
+
+
 </script>
