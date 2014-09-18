@@ -44,7 +44,7 @@ global $woocommerce, $product, $post;
 								  foreach($allvariationID as $mid)
 								  {
 								  $pls = $wpdb->get_results("select guid from wp_posts where post_parent = ".$mid);
-								   var_dump($pls);
+								  // var_dump($pls);
 								  
 								  $gh[]=$pls[0]->guid;
 								  }
