@@ -49,8 +49,9 @@ global $woocommerce, $product, $post;
 
  									$as=0;
 									foreach ( $terms as $term ) {
+										
 										if ( ! in_array( $term->slug, $options ) ) continue;
-										echo '<div class="variationdiv" id="radio_' . $term->slug . '"><input type="radio" value="' . $term->slug . '" ' . checked( $selected_value, $term->slug, false ) . ' id="'. esc_attr( sanitize_title($name) ) .'" name="attribute_'. sanitize_title($name).'"><label for="'. esc_attr( sanitize_title($name) ) .'">as</label></div>';
+										echo '<div class="variationdiv" id="radio_' . $term->slug . '"><input type="radio" value="' . $term->slug . '" ' . checked( $selected_value, $term->slug, false ) . ' id="'. esc_attr( sanitize_title($name) ) .'" name="attribute_'. sanitize_title($name).'"><img  src="'.$gh[$as].'" /></div>';
 									$as++;
 									}
 								} else {
@@ -85,8 +86,3 @@ global $woocommerce, $product, $post;
 </form>
 
 <?php do_action('woocommerce_after_add_to_cart_form'); ?>
-
-<script type="text/javascript" >
-
-
-</script>
