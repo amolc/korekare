@@ -140,7 +140,7 @@ img.gdlr-full-boxed-background{ min-height: 100%; min-width: 1024px;
 	
 /*--- top navigation ---*/
 .top-navigation-wrapper{ position: relative; z-index: 98;/*border-top-width: 3px; border-top-style: solid;border-bottom-width: 1px; border-bottom-style: solid; */}
-.top-navigation-left{ float: left;margin-left: 15px;width: 189px; }
+.top-navigation-left{ float: left;margin-left: 15px;width: 227px; }
 .top-navigation-right{ float: right; margin: 0px 15px; }
 .top-navigation-right-text{ float: left; padding: 8px; line-height: 18px; } 
 .top-social-wrapper{float: left;
