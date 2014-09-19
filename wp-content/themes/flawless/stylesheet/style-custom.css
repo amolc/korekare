@@ -17,9 +17,9 @@ h3{ font-size: 32px; }
 h4{ font-size: 26px; }
 h5{ font-size: 21px; }
 h6{ font-size: 16px; }
-body .top-navigation-wrapper{ border-top-color: #1b1b1b; }
-.top-navigation-wrapper, .gdlr-top-menu.sf-menu > li > a{ border-color: #353535; }
-.top-navigation-wrapper{ background-color: #545454; }
+body .top-navigation-wrapper{ /*border-top-color: #1b1b1b; */}
+.top-navigation-wrapper, .gdlr-top-menu.sf-menu > li > a{/* border-color: #353535; */}
+.top-navigation-wrapper{ /*background-color: #545454; */}
 .top-navigation-wrapper{ color: #ffffff; }
 .gdlr-top-menu.sf-menu > li > a{ background-color: #464646; }
 .gdlr-top-menu.sf-menu > li > a{ color: #ffffff; }
