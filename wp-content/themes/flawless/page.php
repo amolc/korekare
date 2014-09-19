@@ -43,7 +43,7 @@
 		<?php 
 			}else{ 
 				if( !empty($with_sidebar_content) ){ 
-					echo '<div class="with-sidebar-wrapper">';
+					echo '<div class="with-sidebar-wrapper home-banner">';
 					gdlr_print_page_builder($with_sidebar_content);
 					echo '</div>';
 				}

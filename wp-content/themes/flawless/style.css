@@ -1179,5 +1179,6 @@ margin-right: 0!important;padding: 10px 14px!important;
 float: none !important; 
 }
 .gdlr-navigation li:hover, .gdlr-navigation li.current-menu-item{ background-color:#f6f6f6;}
-.with-sidebar-wrapper{ background-image:url(images/tall_header.jpg); height: 403px;margin-bottom: 20px;}
+.home-banner{ background-image:url(images/tall_header.jpg); height: 403px;margin-bottom: 20px;}
 #content-section-1{ display:none}
+.woocommerce.columns-3 ul.products { margin-bottom:0px;}

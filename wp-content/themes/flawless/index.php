@@ -11,7 +11,7 @@
 		$gdlr_sidebar = gdlr_get_sidebar_class($gdlr_sidebar);
 	?>
 	<div class="with-sidebar-wrapper">
-		<?php /*?><div class="with-sidebar-container container">
+		<div class="with-sidebar-container container">
 			<div class="with-sidebar-left <?php echo $gdlr_sidebar['outer']; ?> columns">
 				<div class="with-sidebar-content <?php echo $gdlr_sidebar['center']; ?> gdlr-item-start-content columns">
 					<?php		
@@ -53,7 +53,7 @@
 			</div>
 			<?php get_sidebar('right'); ?>
 			<div class="clear"></div>
-		</div><?php */?>				
+		</div>				
 	</div>				
 
 </div><!-- gdlr-content -->
