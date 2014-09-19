@@ -1149,9 +1149,11 @@ label > input:checked + img{
     background: #ccc;
     margin-right:10px;
     cursor:pointer;
+	position:relative;
 }
+.variationdiv input[type="radio"] { position:absolute; top:0; left:0;width:30px; height:27px; opacity:0; }
 
-.variations div.selected, .variations div:hover {
+.variations div:hover {
     border: 3px solid #00cc00;
 }
 /**/
