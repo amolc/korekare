@@ -1175,3 +1175,4 @@ float: none !important;
 .home-banner{ background-image:url(images/tall_header.jpg); height: 403px;margin-bottom: 20px;}
 #content-section-1{ display:none}
 .woocommerce.columns-3 ul.products { margin-bottom:0px;}
+html .woocommerce ul.products li.product, html .woocommerce-page ul.products li.product{margin: 0px 1% 0 0px !important; margin-top:10px !important;}
