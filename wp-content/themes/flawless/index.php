@@ -11,7 +11,7 @@
 		$gdlr_sidebar = gdlr_get_sidebar_class($gdlr_sidebar);
 	?>
 	<div class="with-sidebar-wrapper">
-		<div class="with-sidebar-container container">
+		<?php /*?><div class="with-sidebar-container container">
 			<div class="with-sidebar-left <?php echo $gdlr_sidebar['outer']; ?> columns">
 				<div class="with-sidebar-content <?php echo $gdlr_sidebar['center']; ?> gdlr-item-start-content columns">
 					<?php		
@@ -46,13 +46,14 @@
 						$paged = (get_query_var('paged'))? get_query_var('paged') : 1;
 						echo gdlr_get_pagination($wp_query->max_num_pages, $paged);													
 					?>
+
 				</div>
 				<?php get_sidebar('left'); ?>
 				<div class="clear"></div>
 			</div>
 			<?php get_sidebar('right'); ?>
 			<div class="clear"></div>
-		</div>				
+		</div><?php */?>				
 	</div>				
 
 </div><!-- gdlr-content -->
