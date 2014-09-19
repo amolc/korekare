@@ -51,7 +51,14 @@
 			<div class="top-navigation-container container">
 				
 				<div class="top-navigation-right">
-				<div class="top-navigation-left">					<ul class="gdlr-top-menu sf-menu" id="gdlr-top-navigation" >						<?php do_action('gdlr_top_left_menu'); ?>					</ul>				</div>	
+				<div class="top-navigation-left">
+                			<?php global $theme_option;
+		if( empty($theme_option['enable-top-search']) || $theme_option['enable-top-search'] == 'enable' ){
+			echo '<div class="gdlr-nav-search-form-button" id="gdlr-nav-search-form-button"><i class="icon-search"></i></div>';
+		}
+		echo '</nav>'; // gdlr-navigation ?>
+                	<ul class="gdlr-top-menu sf-menu" id="gdlr-top-navigation" ><?php do_action('gdlr_top_left_menu'); ?></ul>
+                </div>	
 					<div class="top-social-wrapper">
 						<?php gdlr_print_header_social(); ?>
 					</div>
@@ -107,6 +114,7 @@
 					?>
 					
 					<div class="clear"></div>
+                    
 				</div>
 			</div>
 		</div>
