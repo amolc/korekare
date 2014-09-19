@@ -100,7 +100,7 @@ html .woocommerce-result-count, html .woocommerce-page .woocommerce-result-count
 	margin-bottom: 45px;
 }
 html .woocommerce ul.products li.product a img, html .woocommerce-page ul.products li.product a img {
-	margin: 0 0 20px;
+	margin: 0 0 10px;
 }
 .woocommerce .tagged_as, .woocommerce .posted_in{ display: block; }
 html .woocommerce .quantity input.qty, html .woocommerce #content .quantity input.qty, html .woocommerce-page .quantity input.qty, html .woocommerce-page #content .quantity input.qty {
@@ -683,3 +683,7 @@ margin-bottom: 10px;
     width: 29.75%;
     background-color:#fff;
 }
+/**/
+html .woocommerce ul.products li.product h3{ text-align:left}
+ html .woocommerce ul.products li.product .price{ text-align:left;font-size: 15px;}
+html .woocommerce ul.products li.product{margin: 0px 1% 0.5em 0px;}
