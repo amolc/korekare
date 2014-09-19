@@ -38,30 +38,19 @@ global $woocommerce, $product, $post;
 									$terms = get_terms( sanitize_title($name), array('menu_order' => 'ASC') );
 
 								  $variationID='_transient_wc_product_children_ids_'.$post->ID;
-								  
-								  echo '<pre>';
-								  print_r($variationID);
-								  echo '</pre>';
+							
 								  $allvariationID=get_option($variationID);
-								  
-								  echo '<pre>';
-								  print_r($allvariationID);
-								  echo '</pre>';
+						
 								  $gh= array();
-								  // var_dump($gh);
+						
 								  global $wpdb;
 								  foreach($allvariationID as $mid)
 								  {
 								  $pls = $wpdb->get_results("select guid from wp_posts where post_parent = ".$mid);
-								echo '<pre>';
-								  print_r($pls);
-								  echo '</pre>';
+						
 								  
 								  $gh[]=$pls[0]->guid;
 								  }
-								   echo '<pre>';
-								  print_r($gh);
-								  echo '</pre>';
 
  									$as=0;
 									foreach ( $terms as $term ) {
