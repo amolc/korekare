@@ -143,13 +143,13 @@ img.gdlr-full-boxed-background{ min-height: 100%; min-width: 1024px;
 .top-navigation-left{ float: left;margin-left: 15px;width: 236px; }
 .top-navigation-right{ float: right; margin: 0px 15px; }
 .top-navigation-right-text{ float: left; padding: 8px; line-height: 18px; } 
-.top-social-wrapper{float: left;
+.top-social-wrapper{ display:none;/*float: left;
 padding-top: 7px;
 padding-bottom: 7px;
 padding-left: 10px;
 padding-right: 10px;
 height: 24px;
-background: #464646; } /* height = 33px */
+background: #464646;*/ } /* height = 33px */
 .top-social-wrapper .social-icon{ float: left; margin-left: 7px; max-width: 19px; }
 .top-social-wrapper .social-icon:first-child{ margin-left: 0px; }
 .top-social-wrapper .social-icon a:hover{ opacity: 0.6; filter: alpha(opacity=60); }
@@ -1187,3 +1187,4 @@ float: none !important;
 .woocommerce.columns-3 ul.products { margin-bottom:0px;}
 html .woocommerce ul.products li.product, html .woocommerce-page ul.products li.product{margin: 0px 1% 0 0px !important; margin-top:10px !important;}
 .woocommerce.columns-3 ul.products li a img.attachment-shop_catalog.wp-post-image, .woocommerce.columns-3 ul.products li a img.woocommerce-placeholder{ width:280px; height:210px;}
+
