@@ -22,7 +22,7 @@ body .top-navigation-wrapper{ /*border-top-color: #1b1b1b; */}
 .top-navigation-wrapper{ /*background-color: #545454; */}
 .top-navigation-wrapper{ color: #ffffff; }
 .gdlr-top-menu.sf-menu > li > a{ /*background-color: #464646;*/ }
-.gdlr-top-menu.sf-menu > li > a{ color:grey; }
+.gdlr-top-menu.sf-menu > li > a{ color:grey;text-transform: uppercase; }
 .gdlr-top-menu > .gdlr-mega-menu .sf-mega{ background-color: #ffffff; }
 .gdlr-top-menu > .gdlr-mega-menu .sf-mega, .gdlr-top-menu > .gdlr-mega-menu .sf-mega a{ color: #808080; }
 .gdlr-top-menu.sf-menu > li .sub-menu-item{ border-color: #e3e3e3; }

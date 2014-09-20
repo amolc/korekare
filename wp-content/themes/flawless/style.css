@@ -155,11 +155,11 @@ background: #464646;*/ } /* height = 33px */
 .top-social-wrapper .social-icon a:hover{ opacity: 0.6; filter: alpha(opacity=60); }
 
 /*--- search form ---*/
-.gdlr-header-style-1 .gdlr-nav-search-form-button{ border-width: 1px;
+.gdlr-header-style-1 .gdlr-nav-search-form-button{ /*border-width: 1px;
 border-style: solid;
 margin-left: 5px;
 margin-right: 10px;
-float: left;}
+float: left;*/display: none;}
 .gdlr-header-style-2 .gdlr-nav-search-form-button{ float: right; margin-top: 7px; }
 .ie7 .gdlr-header-style-2 .gdlr-nav-search-form-button{ display: none !important; }
 
