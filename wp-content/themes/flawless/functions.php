@@ -171,6 +171,16 @@ function bartag_func( $atts ) {
 		$show_attach = get_posts( $args );	
 		$htmlcontent ='';
 		foreach ( $show_attach as $key => $value ) {
+			extract( shortcode_atts( array(
+				'file' => 'default.stl',
+				'name' => 'default',
+				'color' => get_option('stl_color'),
+				'background' => get_option('stl_background'),
+				'width' => get_option('stl_div_width'),
+				'height' => get_option('stl_div_height'),
+				'show_controls' => get_option('stl_show_controls'),
+			), $atts ) );
+			
 			$htmlcontent .= $value->guid;
 		}
 		
