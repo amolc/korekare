@@ -63,7 +63,7 @@ if(!class_exists('STLViewer'))
      					window.onload = function() {
        						thingiurlbase = "'.plugin_dir_url(__FILE__).'js";
         					thingiview = new Thingiview("'.$name.'");
-        					thingiview.loadSTL("'.$upload_dir_array[baseurl].'/'.$file.'");
+        					thingiview.loadSTL("'.$file.'");
         					thingiview.setObjectColor(\''.$color.'\');
         					thingiview.setBackgroundColor(\''.$background.'\');
         					thingiview.initScene();
