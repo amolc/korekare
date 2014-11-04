@@ -143,3 +143,37 @@ function change_title_on_logo() {
 	return 'Kore Kara';
 }
 add_filter('login_headertitle', 'change_title_on_logo');
+
+add_filter('upload_mimes','add_custom_mime_types');
+	function add_custom_mime_types($mimes){
+		return array_merge( $mimes,array (
+			'stl' => 'application/sla'
+		));
+	}
+add_shortcode( 'stldemo', 'bartag_func' );
+
+function bartag_func( $atts ) {
+      $atts = shortcode_atts( array(
+ 	      'foo' => 'no foo',
+ 	      'baz' => 'default baz'
+      ), $atts );
+		global $post;
+		
+		$args = array(
+			 'posts_per_page' => -1,
+			 'orderby' => 'rand',
+			 'post_parent' => $post->ID,
+			 'post_type' => 'attachment',			 
+		);
+		
+		print_r( $show_attach );
+
+		$show_attach = get_posts( $args );	
+		$htmlcontent ='';
+		foreach ( $show_attach as $key => $value ) {
+			$htmlcontent .= $value->guid;
+		}
+		
+		//echo $htmlcontent = 'asasjasgajsjagsajgsjasgajgsajsgajsgj';	
+      return $htmlcontent;
+}
