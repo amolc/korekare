@@ -180,8 +180,8 @@ function bartag_func( $atts ) {
 				'height' => get_option('stl_div_height'),
 				'show_controls' => get_option('stl_show_controls'),
 			), $atts ) );
-			
-			$htmlcontent .= $value->guid;
+
+			$htmlcontent .= $value->guid.'<br/>';
 		}
 		
 		//echo $htmlcontent = 'asasjasgajsjagsajgsjasgajgsajsgajsgj';	
