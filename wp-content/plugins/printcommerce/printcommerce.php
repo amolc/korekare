@@ -9,13 +9,14 @@
  * Requires at least: 3.8
  * Tested up to: 4.0
  *
- * Text Domain: commerce-engine
+ * Text Domain: woocommerce
  * Domain Path: /i18n/languages/
  *
  * @package WooCommerce
  * @category Core
  * @author WooThemes
  */
+require_once 'translate.php';
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
