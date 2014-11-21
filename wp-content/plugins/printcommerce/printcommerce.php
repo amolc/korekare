@@ -9,7 +9,7 @@
  * Requires at least: 3.8
  * Tested up to: 4.0
  *
- * Text Domain: printcommerce
+ * Text Domain: commerce-engine
  * Domain Path: /i18n/languages/
  *
  * @package WooCommerce
