@@ -200,7 +200,7 @@ float: left;*/display: none;}
 
 .gdlr-header-wrapper{ position: relative; z-index: 99; }
 .gdlr-header-container{ position: relative; z-index: 97; }
-.gdlr-logo{ width: 50%; margin: 0px auto; }
+.gdlr-logo{ width: 50%; margin: 0px auto; text-align: center; }
 .gdlr-logo h1{ margin-bottom: 0px; line-height: 0; }
 
 .gdlr-navigation-wrapper.gdlr-style-1 .gdlr-navigation{ /*float: right;*/ float:none; margin-left: 15px; margin-right: 15px;height: 45px;}
