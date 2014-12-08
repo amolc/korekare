@@ -1,6 +1,6 @@
 <?php
 /*
-  Plugin Name: Woocommerce Color or Image Variation Select
+  Plugin Name: Color or Image Variation Select
   Plugin URI: http://phppoet.com
   Description: Convert variable select box into image ,color or text
   Version: 1.1.5
@@ -30,7 +30,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
   * check weather woocommerce is active or not
   */
 
- if (is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
+ 
  
           require 'classes/class_create_variations_metabox.php';
 		  require 'classes/class_override_woocommerce_variable_tamplate.php';
@@ -40,18 +40,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 		  require 'includes/wcva_swatch_form_fields.php';
 		  
  
-     } else {
-    /*
-	 * Display Notice if woocommerce is not installed
-	 */
-      function wcva_installation_notice() {
-         echo '<div class="updated" style="padding:15px; position:relative;"><a href="http://wordpress.org/plugins/woocommerce/">'.__('Woocommerce','dpta').'</a>  must be installed and activated before using this plugin. </div>';
-       }
-        add_action('admin_notices', 'wcva_installation_notice');
-       return;
-
-     }
-	 
+ 	 
     /*
 	 * Gets absolute path for plugin
 	 */
