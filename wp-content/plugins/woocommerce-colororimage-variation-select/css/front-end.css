@@ -1,0 +1,65 @@
+.swatchinput {
+  display:inline-block;
+  padding-right:7px;
+  padding-bottom:3px;
+}
+.belowtext {
+   display: table-cell;
+   vertical-align: bottom;
+   padding-bottom: 16px;
+   font-family: sans-serif;
+   font-weight: bold;
+}
+.wcvaswatch input{
+    margin:0;padding:0;
+	display:none;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+    
+}
+
+
+.wcvaswatch input:active +.wcvaswatchlabel{opacity: .9;}
+.wcvaswatch input:checked +.wcvaswatchlabel{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+     border: solid 2px black;
+	
+}
+.wcvaswatchlabel{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+	
+    display:inline-block;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+
+	border: solid 2px white;
+    outline: solid 1px #9C9999;
+    outline-style:dotted;
+    line-height: 1.0000;
+}
+
+
+
+
+
+
+.wcvaround {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+	outline: solid 0 #9C9999;
+}
+
+
+
+
+
+
+
+	
