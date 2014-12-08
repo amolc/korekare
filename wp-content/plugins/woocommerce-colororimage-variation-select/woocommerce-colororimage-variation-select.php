@@ -1,6 +1,6 @@
 <?php
 /*
-  Plugin Name: Color or Image Variation Select
+  Plugin Name: Color or Image Variation Select Modified by Fountain
   Plugin URI: http://phppoet.com
   Description: Convert variable select box into image ,color or text
   Version: 1.1.5
